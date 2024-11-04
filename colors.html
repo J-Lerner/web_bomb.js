@@ -1,0 +1,44 @@
+<html>
+    <style>
+        .block {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            width: 10px;
+            height: 10px;
+            float: left;
+            z-index: 1;
+        }
+        
+        div.cover {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100vw;
+            height: 100vw;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 100;
+        }
+    </style>
+    <body>
+        <div class="cover"></div>
+    </body>
+    <script>
+        colors = ["blue", "green", "red", "white", "black", "purple", "indigo", "skyblue", "yellow", "teal", "orange", "tan"]
+        
+        setInterval(() => {            
+            for (y = 0; y < 150; y++) {
+                for (x = 0; x < 150; x++) {
+                    const newDiv = document.createElement("div");
+                    newDiv.style.backgroundColor = colors[Math.floor(Math.random() * 12)];
+                    newDiv.style.left = (x*10) + "px";
+                    newDiv.style.top = (y*10) + "px";
+                    newDiv.classList.add("block");
+                    document.body.append(newDiv);
+                }
+            }
+        }, 10)
+    </script>
+</html>

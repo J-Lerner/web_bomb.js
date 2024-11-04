@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Bomb</title>
+        <script type="text/javascript" src="web_bomb.js"></script>
+    </head>
+    <style>
+        input {
+            box-shadow: 0 0 5px 2px black;
+            border: none;
+            outline: none;
+            border-radius: 100px;
+            width: 200px;
+            aspect-ratio: 1;
+            padding: 40px;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <body>
+        <input type="button" value="💣" onclick="bomb(1000, 'colors.html', 10, 50)" />
+    </body>
+    <script src="web_bomb.js"></script>
+</html>
