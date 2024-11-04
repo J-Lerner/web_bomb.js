@@ -13,7 +13,7 @@ script type="text/javascript" src="path/to/web_bomb.js"></script>
 
 ## How to Use Bombs
 
-The Bomb() function has 4 paramters.
+The bomb() function has 4 paramters.
 
 | Name         | Function                                  |
 | :----------- | :---------------------------------------: |
